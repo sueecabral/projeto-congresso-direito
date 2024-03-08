@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+body{
+    padding-bottom: 500px;
+}
+
 /*Event form*/
 
 #event-description{
@@ -98,4 +102,149 @@
 }
 .btn:hover{
     opacity: 1;
+}
+
+/*Schedule Section*/
+#schedule{
+    background-color: var(--secondary);
+}
+#schedule h2{
+    background-color: var(--secondary);
+    font-size: 3em;
+    text-align: center;
+    padding: 1em;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.schedules{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.schedule{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--primary);
+}
+
+.schedule .schedule-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position:center;
+    margin-bottom: 1em;;
+}
+
+#schedule-1{
+    background-image: url(../img/adv_m\ \(3\).jpg);
+}
+#schedule-2{
+    background-image: url(../img/adv_m\ \(1\).jpg);
+}
+#schedule-3{
+    background-image: url(../img/adv_m\ \(5\).jpg);
+}
+
+/*Events Location*/
+#location{
+    height: 400px;   
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7 )),
+    url("../img/adv20.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--primary);
+    /*margin-bottom: 3em;   */ 
+}
+
+#address, #about-location{
+    max-width: 30%;
+}
+
+#address{
+    display: flex;
+}
+
+#address i{
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+
+#address-details{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#about-location h3{
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#about-location p{
+    line-height: 1.5em;
+}
+
+/*Guests*/
+#guest{
+    background-color: var(--secondary);
+}
+#guest h2{
+    background-color: var(--secondary);
+    font-size: 3em;
+    text-align: center;
+    padding: 1em;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.guests{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 90%; 
+    margin: 0 auto;
+}
+
+.guest{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--primary);
+}
+
+.guest .guest-img{
+    width: 250px;
+    height: 250px;
+    /*border-radius: 50%;*/
+    background-size: cover;
+    background-position:center;
+    margin-bottom: 1em;;
+}
+
+#guest-1{
+    background-image: url(../img/adv05.jpg);
+}
+#guest-2{
+    background-image: url(../img/adv06.jpg);
+}
+#guest-3{
+    background-image: url(../img/adv07.jpg);
+}
+#guest-4{
+    background-image: url(../img/adv08.jpg);
 }
