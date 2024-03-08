@@ -14,9 +14,9 @@
     box-sizing: border-box;
 }
 
-body{
+/* body{
     padding-bottom: 500px;
-}
+} */
 
 /*Event form*/
 
@@ -229,8 +229,7 @@ body{
 
 .guest .guest-img{
     width: 250px;
-    height: 250px;
-    /*border-radius: 50%;*/
+    height: 375px;
     background-size: cover;
     background-position:center;
     margin-bottom: 1em;;
@@ -247,4 +246,171 @@ body{
 }
 #guest-4{
     background-image: url(../img/adv08.jpg);
+}
+/*Call to action section*/
+#cta{
+    height: 400px;   
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7 )),
+    url("../img/adv01.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+}
+
+#cta h3{
+    margin-bottom: 1.2em;
+    color: var(--primary);
+    font-size: 2em;
+    font-weight: 500px;
+}
+
+#cta .btn{
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#sponsors h3{
+    background-color: var(--secondary);
+    font-size: 3em;
+    text-align: center;
+    padding: 1em;
+    font-weight: 500;
+    color: var(--primary);
+}
+.sponsors{
+    padding: 4em;
+    text-align: center;
+}
+
+#sponsors img{     
+    width: 200px;
+    height: 200px;       
+}
+
+#footer{
+    text-align: center;
+    background: var(--secondary);
+    color: var(--primary);
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3{
+    font-size: 1.8em;
+    margin-bottom: .5em;
+    margin-top: 2em;  
+}
+
+#footer p:nth-child(2){
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+#footer span{
+    font-weight: bold;
+}
+.wpp{
+    padding: 0.5em;
+    font-size: 4em;
+    color: green;
+}
+
+/*Mobile*/
+@media (max-width: 450px){
+.btn{
+    opacity: 1;
+}
+/*Event form*/
+#event-description{
+    flex-direction: column;
+    height: auto;
+ }
+
+ #disclaimer{
+    padding: 2em;
+ }
+
+ #disclaimer h2{
+    margin-bottom: .5em;
+ }
+ #subscription-form{
+    max-width: 70%;
+    margin-bottom: 2em;
+ }
+
+ /*Shcedule section*/
+ .schedules{
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2em;
+ }
+ .schedule{
+    max-width: 100%;
+    margin-bottom: 2em;
+ }
+
+ /*Event Location*/ 
+ #location{
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 2em 0;
+ }
+ #address{
+    order: 2; /*Muda a ordem dos elementos*/
+    flex-direction: column;
+    max-width: 100%;
+ }
+ #address i{
+    margin: .3em 0;
+ }
+ #about-location{
+    order: 1;
+    max-width: 90%;    
+ }
+ #about-location h3{
+    margin-bottom: 0;
+ }
+ #about-location p{
+    display: none;
+ }
+
+ /*Guests section*/
+ .guests{
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2em;
+ }
+ .guest{
+    max-width: 100%;
+    margin-bottom: 2em;
+}
+/*Call to Action Section*/
+#cta h3{
+    text-align: center;
+    padding-right: .5em;
+}
+#cta .btn{
+    width: 60%;    
+}
+/*Footer*/
+#footer{
+    padding-bottom: 1em; 
+}
+#footer h3{
+    padding-right: .5em;
+}
+
+#footer .paragrafo-1, .paragrafo-2{
+    max-width: 95%
+}
 }
